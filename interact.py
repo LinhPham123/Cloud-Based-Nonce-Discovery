@@ -8,6 +8,7 @@ if __name__ == "__main__":
     difficulty_level_string = input("Enter level of difficulty (1 to 64): ")
 
     key_name = input("Your key pair name/path: ")
+    role_ARN = input("Enter the IAM role for your instance (AmazonEC2RoleforSSM policy is required): ")
     delete_bucket = input("Do you want to delete the bucket when finish? (yes/no): ")
 
     s3 = boto3.resource('s3')  
@@ -34,7 +35,7 @@ if __name__ == "__main__":
             KeyName = key_name,
             SecurityGroups = ['launch-wizard-1'],
             IamInstanceProfile = {
-                'Arn' : 'arn:aws:iam::578196128070:instance-profile/ec2full'
+                'Arn' : role_ARN
             }
         )
     
