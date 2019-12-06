@@ -10,6 +10,6 @@ if __name__ == "__main__":
     if bucket_to_kill != 'n/a':
         s3 = boto3.resource('s3')
         bucket = s3.Bucket(bucket_to_kill)
-        for item in bucket.objects.all():s
+        for item in bucket.objects.all():
             item.delete()
         s3.Bucket(bucket_to_kill).delete()
