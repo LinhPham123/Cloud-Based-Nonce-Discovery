@@ -4,9 +4,9 @@
 This is the repository for the Cloud Computing coursework at Bristol University.
 
 ## Scripts
-“interact.py” is the main script to be execute on the local machine.
-“pow.py” is the script running the proof of work, and will be sent to the cloud and executed by the instances.
-“scram.py” is an emergency stop which will terminate all the EC2 instances, plus deleting the S3 bucket if required.
+- “interact.py” is the main script to be execute on the local machine.
+- “pow.py” is the script running the proof of work, and will be sent to the cloud and executed by the instances.
+- “scram.py” is an emergency stop which will terminate all the EC2 instances, plus deleting the S3 bucket if required.
 
 ## Dependencies Needed on Local Machine
 - Python3
