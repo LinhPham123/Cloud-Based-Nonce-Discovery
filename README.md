@@ -6,7 +6,7 @@ This is the repository for the Cloud Computing coursework at Bristol University.
 ## Scripts
 - “interact.py” is the main script to be execute on the local machine.
 - “pow.py” is the script running the proof of work, and will be sent to the cloud and executed by the instances.
-- “scram.py” is an emergency stop which will terminate all the EC2 instances, plus deleting the S3 bucket if required.
+-  Executing “scram.py” will terminate all the EC2 instances, plus deleting the S3 bucket if required.
 
 ## Dependencies Needed on Local Machine
 - Python3
@@ -21,5 +21,5 @@ This is the repository for the Cloud Computing coursework at Bristol University.
 5. Download all source codes into one folder and execute.
 ```python interact.py```
 6. Enter the parameters prompted.
-7. In case an emergency stop needed, stop the interact.py script with ```CTRL+C``` and execute
+7. In case an emergency stop needed, stop the interact.py script with ```CTRL+C``` and execute.
 ```python scram.py```.
